@@ -1,7 +1,7 @@
 // App.jsx
 import React, { use, useRef } from "react";
 import "./App.css";
-import bannerImg from "./assets/Banner.jpg"; // Usa la imagen que quieras
+import bannerImg from "./assets/Banner1.jpg"; // Usa la imagen que quieras
 import { FaFacebook, FaInstagram } from "react-icons/fa"; // Importamos los íconos
 
 export default function App() {
@@ -70,18 +70,6 @@ export default function App() {
         El personal recibirá formación continua en normativa inmobiliaria, servicio al cliente, resolución de conflictos, herramientas tecnológicas y procesos internos. Se harán evaluaciones periódicas para asegurar el cumplimiento del perfil de cada cargo</p>
       </section>
 
-      {/* <section ref={ValoresRef} className="section"> 
-        <h2>Valores</h2>
-        <ul>
-          <li><strong>Integridad: </strong>Actuar con transparencia y honestidad en todas nuestras acciones y decisiones.</li>
-          <li><strong>Responsabilidad: </strong>Asumir la responsabilidad de nuestras acciones y decisiones, y cumplir con nuestros compromisos.</li>
-          <li><strong>Respeto: </strong>Tratar a nuestros clientes, empleados y socios con respeto y dignidad.</li>
-          <li><strong>Innovación: </strong>Buscar constantemente nuevas formas de mejorar nuestros servicios y productos.</li>
-          <li><strong>Calidad: </strong>Entregar servicios y productos de alta calidad que superen las expectativas de nuestros clientes.</li>
-          <li><strong>Empatía: </strong>Entender y satisfacer las necesidades y expectativas de nuestros clientes.</li>
-        </ul>
-      </section> */}
-
       <section ref={ValoresRef} class="valores-section">
         <h2>Valores</h2>
         <div class="valores-container">
@@ -109,7 +97,7 @@ export default function App() {
             <h3>Empatía</h3>
             <p>Entender y satisfacer las necesidades y expectativas de nuestros clientes.</p>
           </div>
-          
+
         </div>
       </section>
 
