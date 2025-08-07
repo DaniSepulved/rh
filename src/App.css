@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Banner de ancho completo y alto completo */
+.banner {
+  width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
+  height: 300px; /* Asegura que ocupe todo el alto de la pantalla */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: white;
+  text-align: center;
+  position: relative; /* Es importante para que el navbar se posicione correctamente */
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: absolute; /* Posiciona el título sobre el banner */
+  bottom: 100px; /* Ajusta la posición vertical del texto */
+  left: 50px; /* Ajusta la posición horizontal del texto */
+  transform: none; /* Asegura que no haya transformaciones no deseadas */
+  margin-top: 40px;
+}
+
+/* Estilos de la barra de navegación superpuesta */
+.navbar {
+  position: absolute; /* Posicionamiento absoluto sobre el banner */
+  top: 0;
+  right: 0; /* Lo mueve a la derecha */
+  padding: 20px;
+  z-index: 10; /* Asegura que esté por encima del banner */
+}
+
+.navbar nav ul {
+  display: flex; /* Alinea los elementos en una fila */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav li {
+  color: white; /* Color del texto blanco */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */
+  transition: color 0.3s ease;
+}
+
+.navbar nav li:hover {
+  color: #add8e6;
+}
+
+/* Secciones */
+.section {
+  padding: 50px;
+  min-height: 50vh;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: #777676; /* Color gris opaco */
+  border-top: 1px solid #ddd;
+}
+
+/* Contenedor para el texto y los íconos */
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;   /* 🔽 Baja todo el bloque (opcional) */
+  margin-top: -20px;     /* 🔼 Sube el bloque hacia arriba */
+}
+
+.social-media-container h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 10px; /* 🔼 Sube solo el texto */
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 3rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #add8e6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.valores-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.valores-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.valores-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.valor-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.valor-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.valor-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #005baa;
+}
+
+.valor-box p {
+  font-size: 16px;
+  color: #444;
+}
